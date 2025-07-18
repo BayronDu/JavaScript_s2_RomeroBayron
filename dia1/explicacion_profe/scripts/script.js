@@ -33,8 +33,4 @@ for(i=0;i<4;i++){
     console.log("Hola "+ i);
 }
 
-while(booleanito1 == true){
-    console.log("una vez");
-}
-
 //Desarrollado por: Bayron Romero -C.C: 1.005.338.700
