@@ -5,7 +5,8 @@ consulta.onload = function () {
     if (consulta.status >= 200 && consulta.status < 300) {
         const data = JSON.parse(consulta.responseText);
         console.log(data);
-        alert(data);
+        alert(Object.entries(data));
+        
     } else {
         console.error('Error:', consulta.status, consulta.statusText);
     }
