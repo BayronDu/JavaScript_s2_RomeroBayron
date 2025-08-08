@@ -1,4 +1,5 @@
-const token = "9c8ece11ac7213ae313a73d70b8d69c1"
+const token = "9c8ece11ac7213ae313a73d70b8d69c1";
+
 
 
 function buscarPersonaje() {
@@ -23,13 +24,14 @@ function buscarPersonaje() {
                         let division = document.getElementById("resultados");
                         division.innerHTML += `
                         <div class="card">
-            <img src="${daticos["results"][i]["image"]["url"]}" alt="">
+            <img src="${daticos["results"][i]["image"]["url"]}" alt="imagen">
             <h3>${daticos["results"][i]["name"]}</h3>
-            <p><strong>NombreCompleto: </strong>${daticos["results"][i]["biography"]["full-name"]}</p>
-            <p><strong>Specie:</strong>${daticos["results"][i]["species"]}</p>
-        </div>
-                        `
-                        console.log(daticos["results"][i]["name"]);
+            <p><strong>ID: </strong>${daticos["results"][i]["id"]}</p>
+            <p><strong>Nombre Completo: </strong>${daticos["results"][i]["biography"]["full-name"]}</p>
+            <p><strong>Genero: </strong>${daticos["results"][i]["appearance"]["race"]}</p>
+
+            
+            </div>`
                     }
                 }
 
